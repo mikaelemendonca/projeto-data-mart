@@ -1,0 +1,37 @@
+
+
+
+Indicadores 
+Quantos agendamentos por médico/clínica
+Tipos de procedimentos mais agendados por médico/clínica
+Quantos agendamentos foram (confirmados, remarcados, cancelados) por médico/clínica
+Quantos agendamentos por médico/clínica por dia
+Qual dia com (mais, menos) agendamentos por médico/clínica
+Quantos agendamentos por mês por médico/clínica
+Qual foi o faturamento por médico/clínica por dia
+Qual foi o faturamento por médico/clínica por mês
+
+
+Granularidade
+Uma linha da tabela fato agendamento representa: Um agendamento para um procedimento em um dia, foi feito por um paciente, para um médico, em uma clínica, possui um status.
+
+
+Dimensões 
+Tempo
+Procedimento
+Token
+Clínica
+Médico
+Status
+
+
+Agregados
+Uma linha da tabela fato agendamentos mensais representa: O conjunto de agendamentos para um procedimento em um mês, para um médico, em uma clínica, possui um status.
+
+
+Histórico
+Tipo 2:
+	Dimensão Status: nome
+Tipo 3:
+	Dimensão Procedimento: valor
+
